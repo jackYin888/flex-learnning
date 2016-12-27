@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>demo2</title>
+    <style>
+        .flex-box{
+            display: flex;
+            flex-flow: row wrap;
+            height: 500px;
+        }
+        .flex-box > * {
+            flex: 1 100%;
+        }
+        .main{
+            order:2;
+            flex:3 0px;
+            background: #eee;
+        }
+        [class~='aside']{
+            flex:1 auto;
+        }
+        .aside1{
+            order:1;
+            background: yellow;
+        }
+        .aside2{
+            order:3;
+            background: pink;
+        }
+        .footer{
+            order:4;
+            background: #456;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-box">
+        <header>header</header>
+
+        <div class="flex-item main">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis possimus fugit quasi, officia odio delectus sequi dicta
+            quia ipsum adipisci, aliquid consequatur, veniam nisi repellat. Accusamus, perferendis ex tempore nobis. Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Cum aperiam iusto atque iure dolorum ipsum quas aliquam,
+            eos neque deserunt possimus accusamus amet rerum voluptates quam ut, hic? Aliquid, excepturi! Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit. Fugit officia perferendis nesciunt doloribus deserunt placeat ad eveniet,
+            dolorem accusamus libero culpa dolor aperiam eaque esse doloremque repudiandae provident saepe cum?
+        </div>
+        <aside class="aside aside1">aside1</aside>
+        <aside class="aside aside2">aside2</aside>
+        <footer class="footer"></footer>
+    </div>
+    <a href="/stadard.html">stadard</a>
+    <a href="/perfact_centering.html">perfact centering</a>
+    <a href="/common_layout.html">common layout</a>
+    <a href='https://chriswrightdesign.com/experiments/using-flexbox-today/'>案例</a>
+
+</body>
+
+</html>
